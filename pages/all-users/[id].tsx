@@ -4,7 +4,6 @@ import React from 'react'
 
 const SingleUser = ({user}:{user: UserDataProps}) => {
 
-  console.log('user',user)
   return (
     <>
     {user ? 
@@ -28,7 +27,6 @@ const SingleUser = ({user}:{user: UserDataProps}) => {
 export const getServerSideProps = async(context: any)=>{
 
   const {id} =context.params
-  console.log('id',id)
   const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
   const res = await response.json()
 

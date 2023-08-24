@@ -11,7 +11,6 @@ const Posts =  ({posts}:{posts: UserPostDataType[]}) => {
 
   const {userId} = router.query
 
-  console.log('userId',userId)
 
   useEffect(()=>{
     if(userId){
