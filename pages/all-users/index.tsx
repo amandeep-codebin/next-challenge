@@ -17,7 +17,7 @@ const Users =  ({users}:{users: UserDataProps[]}) => {
   )
 }
 
-export const getServerSideProps = async()=>{
+export const getStaticProps = async()=>{
   const response = await fetch('https://jsonplaceholder.typicode.com/users')
 
   const res = await response.json()

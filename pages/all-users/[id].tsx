@@ -24,9 +24,9 @@ const SingleUser = ({user}:{user: UserDataProps}) => {
     </>
   )
 }
-export const getServerSideProps = async(context: any)=>{
+export const getStaticProps = async({params}:any)=>{
 
-  const {id} =context.params
+  const {id} =params
   const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
   const res = await response.json()
 

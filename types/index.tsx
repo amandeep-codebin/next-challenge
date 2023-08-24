@@ -29,3 +29,11 @@ export interface UserPostDataType {
   body: string
 
 }
+
+export interface CommentDataProps {
+    postId: string,
+    id: string,
+    name: string,
+    email: string,
+    body: string,
+}
