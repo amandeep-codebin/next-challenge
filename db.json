@@ -1,0 +1,39 @@
+{
+  "users":[
+    {
+      "id":1,
+      "username":"admin",
+      "password":"admin@123",
+      "type":"admin"
+    },
+    {
+      "id":2,
+      "username":"restaurant1",
+      "password":"restaurant@123",
+      "type":"restaurant"
+    }
+  ],
+  "superAdmin":[
+  {
+    "id":1,
+    "username": "admin",
+    "password": "admin"
+  }
+],
+"restaurant":[
+  {
+    "id":"1",
+    "name": "Ayush Dinning hall",
+    "activate": true,
+    "customerId":"",
+    "totalTables": 5,
+    "availableTables":2
+}
+],
+"customer":[
+  {
+    "id":1,
+    "name":"Ramesh"
+  }
+]
+}
